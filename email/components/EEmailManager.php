@@ -118,7 +118,7 @@ class EEmailManager extends CApplicationComponent
      * @param bool $spool
      * @return bool
      */
-    public function email($to, $subject, $message, $from = null, $attachments = array(), $transport = null, $spool = true)
+    public function email($to, $subject, $message, $from = null, $attachments = array(), $transport = null, $spool = false)
     {
         // get the message
         $swiftMessage = Swift_Message::newInstance($subject);
